@@ -241,8 +241,8 @@ async def vplay(c: Client, m: Message):
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/BotDuniya"),
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/Pmpermit")
+                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/PrincexBots"),
+                            InlineKeyboardButton("💭 Support", url=f"https://t.me/PrincexSupport")
                         ],
                         [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
@@ -318,8 +318,8 @@ async def vplay(c: Client, m: Message):
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/BotDuniya"),
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/pmpermit")
+                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/PrincexBots"),
+                            InlineKeyboardButton("💭 Support", url=f"https://t.me/PrincexSupport")
                         ],
                         [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
@@ -355,7 +355,7 @@ async def vplay(c: Client, m: Message):
                         requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                         buttons = stream_markup(user_id)
                         await m.reply_photo(
-                            photo=image,
+                            photo=f"{IMG_1}",
                             reply_markup=InlineKeyboardMarkup(buttons),
                             caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                         )
@@ -376,7 +376,7 @@ async def vplay(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             buttons = stream_markup(user_id)
                             await m.reply_photo(
-                                photo=image,
+                                photo=f"{IMG_1}",
                                 reply_markup=InlineKeyboardMarkup(buttons),
                                 caption=f"🗂 **Name:** [{songname}]({url}) |`video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                             )
