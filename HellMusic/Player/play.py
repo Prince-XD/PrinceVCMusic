@@ -130,8 +130,8 @@ async def play(c: Client, m: Message):
                       InlineKeyboardButton('⏭️', callback_data="skip"),
                       InlineKeyboardButton("▶️", callback_data="cbresume"),
                   ],[
-                      InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/VEXERA_UPDATES"),
-                      InlineKeyboardButton("• Group", url=f"https://t.me/SNEHABHI_SERVER"),
+                      InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/PrincexBots"),
+                      InlineKeyboardButton("• Group", url=f"https://t.me/PrincexSupport"),
                   ],[
                       InlineKeyboardButton("🗑 Close", callback_data="cls")],
                   ]
@@ -245,8 +245,8 @@ async def play(c: Client, m: Message):
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/VEXERA_UPDATES"),
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/SNEHABHI_SERVER")
+                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/Princexbots"),
+                            InlineKeyboardButton("💭 Support", url=f"https://t.me/PrincexSupport")
                         ],
                         [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
@@ -256,7 +256,7 @@ async def play(c: Client, m: Message):
             )
         else:
             suhu = await m.reply_text(
-        f"**VEXERA Downloader**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+        f"**PrincexMusic Downloader**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
     )
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
@@ -284,7 +284,7 @@ async def play(c: Client, m: Message):
                             f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                         )
                         await m.reply_photo(
-                            photo=image,
+                            photo=f"{IMG_1}",
                             caption=f"💡 **Track added to queue »** `{pos}`\n\n🏷 **Name:** [{songname[:22]}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🎧 **Request by:** {requester}",
                             reply_markup=keyboard,
                         )
@@ -302,7 +302,7 @@ async def play(c: Client, m: Message):
                             await suhu.delete()
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
-                                photo=image,
+                                photo="{IMG_1}",
                                 caption=f"🏷 **Name:** [{songname[:22]}]({url})\n**⏱ Duration:** `{duration}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
                                 reply_markup=keyboard,
                             )
